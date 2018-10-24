@@ -6,7 +6,8 @@
   "author": "V.Zhufiak A.Malyuk",
   "license": "MIT",
   "dependencies": {
-    "knex": "^0.15.2"
+    "knex": "^0.15.2",
+    "sqlite3": "^4.0.3"
   },
   "devDependencies": {
     "jest": "^23.6.0"
