@@ -1,0 +1,14 @@
+{
+  "name": "z1p",
+  "version": "0.0.1",
+  "description": "Zip Codes Validation and Parse.",
+  "main": "index.js",
+  "author": "V.Zhufiak A.Malyuk",
+  "license": "MIT",
+  "dependencies": {
+    "knex": "^0.15.2"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
