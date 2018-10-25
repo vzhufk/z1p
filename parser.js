@@ -27,7 +27,6 @@ let stuff = async line => {
     accuracy
   ] = data;
   if (tmp.length > MAX) {
-    console.log(tmp);
     file.pause();
     await knex
       .insert(tmp)
