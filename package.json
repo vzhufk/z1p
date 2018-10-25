@@ -10,6 +10,8 @@
     "sqlite3": "^4.0.3"
   },
   "devDependencies": {
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "line-by-line": "^0.1.6",
+    "pg": "^7.5.0"
   }
 }
