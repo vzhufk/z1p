@@ -5,14 +5,9 @@
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk",
   "license": "MIT",
-  "dependencies": {
-    "knex": "^0.15.2",
-    "lokijs": "^1.5.5",
-    "sqlite3": "^4.0.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "jest": "^23.6.0",
-    "line-by-line": "^0.1.6",
-    "pg": "^7.5.0"
+    "line-by-line": "^0.1.6"
   }
 }
