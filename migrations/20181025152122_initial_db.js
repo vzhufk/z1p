@@ -1,7 +1,6 @@
 exports.up = function(knex, Promise) {
   return Promise.all([
     knex.schema.createTable("zips", table => {
-      table.increments("id").primary();
       table.string("country_code");
       table.string("zip_code");
       table.string("place");

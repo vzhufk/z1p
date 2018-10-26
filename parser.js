@@ -8,7 +8,7 @@ const file = new LineByLine("./assets/zipcodes.txt", {
 });
 
 const tmp = [];
-const MAX = 100;
+const MAX = 80;
 
 let stuff = async line => {
   const data = line.split("\t");
@@ -26,30 +26,30 @@ let stuff = async line => {
     lon,
     accuracy
   ] = data;
-  if (tmp.length > MAX) {
+  if (tmp.length < MAX) {
+    tmp.push({
+      accuracy: accuracy,
+      community: community,
+      community_code: communityCode,
+      country_code: countryCode,
+      latitude: lat,
+      longitude: lon,
+      place: place,
+      province: province,
+      province_code: provinceCode,
+      state: state,
+      state_code: stateCode,
+      zip_code: zip
+    });
+  } else {
     file.pause();
-    await knex
+    await knex("zips")
       .insert(tmp)
-      .into("zips")
       .then(r => console.log(r))
       .catch(e => {});
     file.resume();
     tmp.length = 0;
   }
-  tmp.push({
-    country_code: countryCode,
-    zip_code: zip,
-    place: place,
-    state: state,
-    state_code: stateCode,
-    province: province,
-    province_code: provinceCode,
-    community: community,
-    community_code: communityCode,
-    latitude: lat,
-    longitude: lon,
-    accuracy: accuracy
-  });
 };
 
 file.on("line", stuff);
