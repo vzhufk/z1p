@@ -5,10 +5,10 @@
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk",
   "license": "MIT",
-  "dependencies": {
-    "knex": "^0.15.2",
-    "sqlite3": "^4.0.3"
+  "scripts": {
+    "test": "jest --no-cache"
   },
+  "dependencies": {},
   "devDependencies": {
     "jest": "^23.6.0"
   }
