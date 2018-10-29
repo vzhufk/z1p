@@ -1,16 +1,1 @@
-module.exports = [
-  {
-    accuracy: "6",
-    community: "",
-    community_code: "",
-    country_code: "AS",
-    latitude: "-14.2781",
-    longitude: "-170.7025",
-    place: "Pago Pago",
-    province: "Western",
-    province_code: "050",
-    state: "As",
-    state_code: "60",
-    zip_code: "96799"
-  }
-];
+module.exports=[["6",null,null,"AS","-14.2781","-170.7025","Pago Pago","Western","050","As","60","96799"]]
