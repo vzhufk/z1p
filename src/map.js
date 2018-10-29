@@ -11,16 +11,14 @@ const MAP = {
   state: 9,
   state_code: 10,
   zip_code: 11
-}
-
-module.exports = array => {
-  const result;
-
-  for (const key in MAP){
-    result[key] = array[MAP[key]];
-  }
-  
-  return result;
 };
 
+module.exports = array => {
+  const result = {};
 
+  for (const key in MAP) {
+    result[key] = array[MAP[key]];
+  }
+
+  return result;
+};

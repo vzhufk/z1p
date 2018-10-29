@@ -1,5 +1,4 @@
-const z1p = require("./index.js");
+const z1p = require("./index");
 
-const ua = z1p();
-
-console.log(ua.raw(c => c.zip_code == "10000"));
+const result = z1p([]).raw(v => v.zip_code == "59330");
+console.log(result);

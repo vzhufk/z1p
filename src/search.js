@@ -1,6 +1,14 @@
 const map = require("./map");
 
 module.exports = (code, comp) => {
-  const list = require(`../assets/${code}`).map;
-  return list.filter(v => comp(map(v)));
+  const list = require(`../assets/${code}`);
+  return list.reduce((a, v) => {
+    v = map(v);
+
+    if (comp(v)) {
+      a.push(v);
+    }
+
+    return a;
+  }, []);
 };

@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk",
   "license": "MIT",
+  "scripts": {
+    "test": "jest --no-cache"
+  },
   "dependencies": {},
   "devDependencies": {
     "jest": "^23.6.0"

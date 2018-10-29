@@ -4,7 +4,7 @@ const fs = require("fs");
 const CODES = fs.readdirSync("./assets").map(f => f.replace(".js", ""));
 
 const z1p = (codes, options) => {
-  if (!codes.length) {
+  if (!codes || !codes.length) {
     codes = CODES;
   }
 
@@ -23,7 +23,11 @@ const z1p = (codes, options) => {
   }
 
   const methods = {
-    raw: comp => codes.reduce((a, v) => [...a, ...(search(v, comp) || [])], [])
+    raw: comp =>
+      codes.reduce((a, v) => {
+        const val = search(v, comp) || [];
+        return [...a, ...val];
+      }, [])
   };
 
   return methods;
