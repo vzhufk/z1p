@@ -1,7 +1,10 @@
 const search = require("./search");
 const fs = require("fs");
+const path = require("path");
 
-const CODES = fs.readdirSync("./assets").map(f => f.replace(".js", ""));
+const CODES = fs
+  .readdirSync(path.resolve(__dirname, "..", "assets"))
+  .map(f => f.replace(".js", ""));
 
 const z1p = (codes, options) => {
   if (!codes || !codes.length) {
