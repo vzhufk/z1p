@@ -1,12 +1,20 @@
 const search = require("./search");
 const fs = require("fs");
 
-const CODES = fs.readdirSync(testFolder).map(f => f.replace(".js", ""));
+const CODES = fs.readdirSync("./assets").map(f => f.replace(".js", ""));
 
-const z1p = codes => {
-  if (!codes) {
+const z1p = (codes, options) => {
+  if (!codes.length) {
     codes = CODES;
   }
+
+  if (codes.length === 1 && Array.isArray(codes[0])) {
+    codes = codes[0];
+  }
+
+  codes = codes.filter(c => typeof c === "string").map(c => c.toUpperCase());
+
+  console.log(codes);
 
   const validate = codes.every(c => CODES.includes(c));
 
@@ -17,7 +25,7 @@ const z1p = codes => {
   }
 
   const methods = {
-    raw: comp => CODES.reduce((a, v) => [...a, search(v, comp)])
+    raw: comp => codes.reduce((a, v) => [...a, ...(search(v, comp) || [])], [])
   };
 
   return methods;
