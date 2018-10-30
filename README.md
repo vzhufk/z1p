@@ -1,10 +1,10 @@
-# z1p
+## Zip Codes validation and Parse :mailbox_with_mail:
 
-## Zip Codes validation and Parse
+Module that can be used for search places via zip code and other geolocation properties.
 
-Module that can be used for search places via zip code and etc.
+:clock10: _Note:_ Provide exact country codes to prevent slow performance and out of memory error.
 
-_Note:_ Provide exact country codes to prevent slow performance and out of memory. 🙂
+:package: _Note:_ Package is **~140Mb.**
 
 ## Usage
 
@@ -78,96 +78,9 @@ Place object looks like this:
     zip_code: '59330' }
 ```
 
-```js
-[
-  "AD",
-  "AR",
-  "AS",
-  "AT",
-  "AU",
-  "AX",
-  "BD",
-  "BE",
-  "BG",
-  "BM",
-  "BR",
-  "BY",
-  "CA",
-  "CH",
-  "CL",
-  "CO",
-  "CR",
-  "CZ",
-  "DE",
-  "DK",
-  "DO",
-  "DZ",
-  "ES",
-  "FI",
-  "FM",
-  "FO",
-  "FR",
-  "GB",
-  "GF",
-  "GG",
-  "GL",
-  "GP",
-  "GT",
-  "GU",
-  "HR",
-  "HU",
-  "IE",
-  "IM",
-  "IN",
-  "IS",
-  "IT",
-  "JE",
-  "JP",
-  "LI",
-  "LK",
-  "LT",
-  "LU",
-  "LV",
-  "MC",
-  "MD",
-  "MH",
-  "MK",
-  "MP",
-  "MQ",
-  "MT",
-  "MX",
-  "MY",
-  "NC",
-  "NL",
-  "NO",
-  "NZ",
-  "PH",
-  "PK",
-  "PL",
-  "PM",
-  "PR",
-  "PT",
-  "PW",
-  "RE",
-  "RO",
-  "RU",
-  "SE",
-  "SI",
-  "SJ",
-  "SK",
-  "SM",
-  "TH",
-  "TR",
-  "UA",
-  "US",
-  "UY",
-  "VA",
-  "VI",
-  "WF",
-  "YT",
-  "ZA"
-];
-```
+## Countries
+
+### [Available countries](https://github.com/vzhufk/z1p/tree/master/assets) in `*.js` files.
 
 ## TODO:
 
@@ -175,4 +88,4 @@ Place object looks like this:
 2. Add wrappers to raw.
 3. Improve performance.
 
-ZIP Codes data from http://www.geonames.org/
+### GeoData provided by **[geonames.org](http://www.geonames.org/)**
