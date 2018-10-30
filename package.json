@@ -1,6 +1,6 @@
 {
   "name": "z1p",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Zip Codes Validation and Parse.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
