@@ -2,6 +2,8 @@ const search = require("./search");
 const fs = require("fs");
 const path = require("path");
 
+const memo = {};
+
 const CODES = fs
   .readdirSync(path.resolve(__dirname, "..", "assets"))
   .map(f => f.replace(".js", ""));
@@ -30,6 +32,20 @@ const z1p = (codes, options) => {
       codes.reduce((a, v) => {
         const val = search(v, comp) || [];
         return [...a, ...val];
+      }, []),
+    findBy: (key, value) =>
+      codes.reduce((acc, code) => {
+        const memory = memo[`${code}:${key}:${value}`] || [];
+        let result;
+
+        if (memory.length) {
+          result = memory;
+        } else {
+          result = search(code, e => e[key] === value);
+          memo[`${code}:${key}:${value}`] = result;
+        }
+
+        return [...acc, ...result];
       }, [])
   };
 
