@@ -27,6 +27,9 @@ z1p(["US"]).raw(v => v.zip_code == "59330");
     state_code: 'MT',
     zip_code: '59330' } ]
 */
+
+// Same as above but memorized
+z1p(["US"]).findBy("zip_code", "59330"));
 ```
 
 ## API
@@ -41,6 +44,15 @@ z1p(["US"]).raw(v => v.zip_code == "59330");
 
 - `compare` `{Function}` function to find.  
   **returns**: {Array of Places}
+
+### .findBy(key, value)
+
+- `key` `{String}` key in object strucuture (zip_code, accuracy, etc.)
+- `value` `{String}` value to find.
+
+  **returns**: {Array of Places}
+
+_Note:_ This method is memorized. Every result will saved to memory so only first call will be slow.
 
 Place object looks like this:
 
