@@ -1,13 +1,15 @@
 const search = require("./search");
 const fs = require("fs");
 const path = require("path");
-const { set, get } = require("./adapter");
+const memoryAdapter = require("./adapter");
 
 const CODES = fs
   .readdirSync(path.resolve(__dirname, "..", "assets"))
   .map(f => f.replace(".js", ""));
 
-const z1p = (codes, options = { memorize: false }) => {
+const z1p = (codes, options) => {
+  options = { memorize: false, adapter: memoryAdapter, ...options };
+
   if (!codes || !codes.length) {
     codes = CODES;
   }
@@ -38,13 +40,13 @@ const z1p = (codes, options = { memorize: false }) => {
 
         if (options.memorize) {
           const memoryKey = `${code}:${key}:${value}`;
-          const memory = get(memoryKey);
+          const memory = options.adapter.get(memoryKey);
 
           if (memory.length) {
             result = memory;
           } else {
             result = search(code, e => e[key] === value);
-            set(memoryKey, result);
+            options.adapter.set(memoryKey, result);
           }
         } else {
           result = search(code, e => e[key] === value);
