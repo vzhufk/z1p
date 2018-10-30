@@ -1,4 +1,4 @@
-## Zip Codes validation and Parse :mailbox_with_mail:
+## Zip Codes Validation and Parse :mailbox_with_mail:
 
 Module that can be used for search places via zip code and other geolocation properties.
 
