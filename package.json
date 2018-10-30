@@ -6,7 +6,7 @@
   "author": "V.Zhufiak A.Malyuk",
   "license": "MIT",
   "scripts": {
-    "test": "jest --no-cache"
+    "test": "jest"
   },
   "dependencies": {},
   "devDependencies": {
