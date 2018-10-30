@@ -1,1 +1,1 @@
-module.exports=[["6",null,null,"MP","14.154","145.201","Rota",null,null,"Rota","100","96951"],["6",null,null,"MP","15.1685","145.7408","Saipan",null,null,"Saipan","110","96950"],["6",null,null,"MP","15.029","145.616","Tinian",null,null,"Tinian","120","96952"]]
+module.exports=[["6",,,"MP","14.154","145.201","Rota",,,"Rota","100","96951"],["6",,,"MP","15.1685","145.7408","Saipan",,,"Saipan","110","96950"],["6",,,"MP","15.029","145.616","Tinian",,,"Tinian","120","96952"]]

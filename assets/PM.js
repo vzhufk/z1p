@@ -1,1 +1,1 @@
-module.exports=[["5",null,null,"PM","47.0975","-56.3814","Miquelon","Miquelon-Langlade","97501","Miquelon-Langlade","97501","97500"],["5",null,null,"PM","46.7809","-56.172","Saint-Pierre",null,null,"Saint-Pierre","97502","97500"]]
+module.exports=[["5",,,"PM","47.0975","-56.3814","Miquelon","Miquelon-Langlade","97501","Miquelon-Langlade","97501","97500"],["5",,,"PM","46.7809","-56.172","Saint-Pierre",,,"Saint-Pierre","97502","97500"]]

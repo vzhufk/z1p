@@ -1,1 +1,1 @@
-module.exports=[["4",null,null,"MH","11.1405","166.4103","Majuro","Ailinginae","007","Mh","68","96960"],["4",null,null,"MH","11.1405","166.4103","Ebeye","Ailinginae","007","Mh","68","96970"]]
+module.exports=[["4",,,"MH","11.1405","166.4103","Majuro","Ailinginae","007","Mh","68","96960"],["4",,,"MH","11.1405","166.4103","Ebeye","Ailinginae","007","Mh","68","96970"]]

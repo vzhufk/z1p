@@ -1,1 +1,1 @@
-module.exports=[["1",null,null,"PW","7.2257","134.3622","Palau",null,null,null,null,"96940"]]
+module.exports=[["1",,,"PW","7.2257","134.3622","Palau",,,,,"96940"]]
