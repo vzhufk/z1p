@@ -1,5 +1,7 @@
 ## Zip Codes Validation and Parse :mailbox_with_mail:
 
+[![Build Status](https://travis-ci.com/vzhufk/z1p.svg?branch=master)](https://travis-ci.com/vzhufk/z1p)
+
 Module that can be used for search places via zip code and other geolocation properties.
 
 :clock10: _Note:_ Provide exact country codes to prevent slow performance and out of memory error.
