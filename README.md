@@ -28,8 +28,11 @@ z1p(["US"]).raw(v => v.zip_code == "59330");
     zip_code: '59330' } ]
 */
 
-// Same as above but memorized
+// Same as above
 z1p(["US"]).findBy("zip_code", "59330"));
+
+// Same as above but memorized
+z1p(["US"], {memorize: true}).findBy("zip_code", "59330"));
 ```
 
 ## API
@@ -38,7 +41,7 @@ z1p(["US"]).findBy("zip_code", "59330"));
 
 - `codes` `{Array of Strings}` Country codes to search in. By default equals to all available.
 - `options` `{Object}`
-  - `memorize` `{Boolean}` !WIP
+  - `memorize` `{Boolean}` `default: false` this options for memorization at methods
 
 ### .raw(compare)
 
