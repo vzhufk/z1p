@@ -11,4 +11,76 @@ describe("z1p module test", () => {
       expect(result).toHaveLength(2);
     });
   });
+
+  describe("find", () => {
+    test("find by zip_code", () => {
+      const result = z1p(["ua"]).findBy("zip_code", "59330");
+
+      expect(result).toHaveLength(1);
+    });
+
+    test("find by zip_code with memo", () => {
+      z1p(["ua"], { memorize: true }).findBy("zip_code", "59330");
+      const result = z1p(["ua"], { memorize: true }).findBy(
+        "zip_code",
+        "59330"
+      );
+
+      expect(result).toHaveLength(1);
+    });
+
+    test("find by accuracy", () => {
+      const result = z1p(["ua"]).findBy("accuracy", "1");
+
+      expect(result.length).toBeGreaterThanOrEqual(1);
+    });
+
+    test("find by country_code", () => {
+      const result = z1p(["ua"]).findBy("country_code", "US");
+
+      expect(result).toHaveLength(0);
+    });
+
+    test("find by latitude with memo", () => {
+      const result = z1p(["US"], { memorize: true }).findBy(
+        "latitude",
+        "47.1008"
+      );
+
+      expect(result.length).toBeGreaterThanOrEqual(1);
+    });
+
+    test("find by longitude", () => {
+      const result = z1p(["US"]).findBy("longitude", "-104.7287");
+
+      expect(result.length).toBeGreaterThanOrEqual(1);
+    });
+
+    test("find by place with memo", () => {
+      const result = z1p(["US"], { memorize: true }).findBy(
+        "place",
+        "Glendive"
+      );
+
+      expect(result).toHaveLength(1);
+    });
+
+    test("find by province_code", () => {
+      const result = z1p(["US"]).findBy("province_code", "021");
+
+      expect(result.length).toBeGreaterThanOrEqual(1);
+    });
+
+    test("find by state with memo", () => {
+      const result = z1p(["us"], { memorize: true }).findBy("state", "Montana");
+
+      expect(result.length).toBeGreaterThanOrEqual(1);
+    });
+
+    test("find by state_code", () => {
+      const result = z1p(["us"]).findBy("state_code", "MT");
+
+      expect(result.length).toBeGreaterThanOrEqual(1);
+    });
+  });
 });
