@@ -1,0 +1,48 @@
+{
+  "name": "z1p.us",
+  "version": "0.0.3",
+  "description": "Zip data for US.",
+  "main": "index.js",
+  "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
+  "license": "MIT",
+  "keywords": [
+    "zip",
+    "zipcode",
+    "county",
+    "geosearch",
+    "geolocation",
+    "region",
+    "state",
+    "us"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "homepage": "https://github.com/vzhufk/z1p",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vzhufk/z1p.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vzhufk/z1p/issues",
+    "email": "vzhufk@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Vadym Zhufiak",
+      "email": "vzhufk@gmail.com",
+      "url": "https://github.com/vzhufk"
+    },
+    {
+      "name": "Andrii Malyuk",
+      "email": "a.malyuchok@gmail.com",
+      "url": "https://github.com/malyuchok"
+    },
+    {
+      "name": "Stepan Vanzuriak",
+      "email": "stepanvanzuriak@gmail.com",
+      "url": "https://github.com/stepanvanzuriak"
+    }
+  ],
+  "dependencies": {}
+}

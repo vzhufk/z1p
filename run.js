@@ -1,15 +1,15 @@
 var fs = require("fs");
 
 const CODES = fs.readdirSync("./assets");
-CODES.map(c => {
-  fs.readFile(`./assets/${c}`, "utf8", function(err, data) {
-    if (err) {
-      return console.log(err);
-    }
-    var result = data.replace(/null/g, "");
 
-    fs.writeFile(`./assets/${c}`, result, "utf8", function(err) {
-      if (err) return console.log(err);
-    });
-  });
+CODES.map(c => {
+  const current = require(`./assets/${c}/package`);
+  current.name = `z1p.${c.toLowerCase()}`;
+  current.description = `Zip data for ${c}.`;
+
+  fs.writeFile(
+    `./assets/${c}/package.json`,
+    JSON.stringify(current, null, 2),
+    () => {}
+  );
 });
