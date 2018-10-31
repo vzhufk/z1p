@@ -46,6 +46,8 @@
   ],
   "dependencies": {},
   "devDependencies": {
+    "@z1p/ua": "0.0.4",
+    "@z1p/us": "0.0.4",
     "iso-country-codes": "0.0.5",
     "jest": "^23.6.0",
     "shelljs": "^0.8.2"
