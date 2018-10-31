@@ -1,23 +1,24 @@
 {
-  "name": "z1p.gt",
-  "version": "0.0.3",
-  "description": "Zip data for GT.",
+  "name": "@z1p/gt",
+  "version": "0.0.4",
+  "description": "Geodata of Guatemala for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "gt"
+    "longitude",
+    "latitude",
+    "iso",
+    "Guatemala",
+    "GT",
+    "GTM",
+    "320"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

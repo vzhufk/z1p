@@ -1,23 +1,24 @@
 {
-  "name": "z1p.mq",
-  "version": "0.0.3",
-  "description": "Zip data for MQ.",
+  "name": "@z1p/mq",
+  "version": "0.0.4",
+  "description": "Geodata of Martinique for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "mq"
+    "longitude",
+    "latitude",
+    "iso",
+    "Martinique",
+    "MQ",
+    "MTQ",
+    "474"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

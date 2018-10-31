@@ -1,23 +1,24 @@
 {
-  "name": "z1p.si",
-  "version": "0.0.3",
-  "description": "Zip data for SI.",
+  "name": "@z1p/si",
+  "version": "0.0.4",
+  "description": "Geodata of Slovenia for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "si"
+    "longitude",
+    "latitude",
+    "iso",
+    "Slovenia",
+    "SI",
+    "SVN",
+    "705"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

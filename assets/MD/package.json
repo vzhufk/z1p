@@ -1,23 +1,24 @@
 {
-  "name": "z1p.md",
-  "version": "0.0.3",
-  "description": "Zip data for MD.",
+  "name": "@z1p/md",
+  "version": "0.0.4",
+  "description": "Geodata of Moldova (the Republic of) for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "md"
+    "longitude",
+    "latitude",
+    "iso",
+    "Moldova (the Republic of)",
+    "MD",
+    "MDA",
+    "498"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

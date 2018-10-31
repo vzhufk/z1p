@@ -1,23 +1,24 @@
 {
-  "name": "z1p.va",
-  "version": "0.0.3",
-  "description": "Zip data for VA.",
+  "name": "@z1p/va",
+  "version": "0.0.4",
+  "description": "Geodata of Holy See (the) for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "va"
+    "longitude",
+    "latitude",
+    "iso",
+    "Holy See (the)",
+    "VA",
+    "VAT",
+    "336"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

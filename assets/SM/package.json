@@ -1,23 +1,24 @@
 {
-  "name": "z1p.sm",
-  "version": "0.0.3",
-  "description": "Zip data for SM.",
+  "name": "@z1p/sm",
+  "version": "0.0.4",
+  "description": "Geodata of San Marino for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "sm"
+    "longitude",
+    "latitude",
+    "iso",
+    "San Marino",
+    "SM",
+    "SMR",
+    "674"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

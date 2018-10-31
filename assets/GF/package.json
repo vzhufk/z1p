@@ -1,23 +1,24 @@
 {
-  "name": "z1p.gf",
-  "version": "0.0.3",
-  "description": "Zip data for GF.",
+  "name": "@z1p/gf",
+  "version": "0.0.4",
+  "description": "Geodata of French Guiana for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "gf"
+    "longitude",
+    "latitude",
+    "iso",
+    "French Guiana",
+    "GF",
+    "GUF",
+    "254"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

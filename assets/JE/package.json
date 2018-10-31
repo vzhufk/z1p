@@ -1,23 +1,24 @@
 {
-  "name": "z1p.je",
-  "version": "0.0.3",
-  "description": "Zip data for JE.",
+  "name": "@z1p/je",
+  "version": "0.0.4",
+  "description": "Geodata of Jersey for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "je"
+    "longitude",
+    "latitude",
+    "iso",
+    "Jersey",
+    "JE",
+    "JEY",
+    "832"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

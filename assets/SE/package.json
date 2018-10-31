@@ -1,23 +1,24 @@
 {
-  "name": "z1p.se",
-  "version": "0.0.3",
-  "description": "Zip data for SE.",
+  "name": "@z1p/se",
+  "version": "0.0.4",
+  "description": "Geodata of Sweden for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "se"
+    "longitude",
+    "latitude",
+    "iso",
+    "Sweden",
+    "SE",
+    "SWE",
+    "752"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

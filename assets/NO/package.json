@@ -1,23 +1,24 @@
 {
-  "name": "z1p.no",
-  "version": "0.0.3",
-  "description": "Zip data for NO.",
+  "name": "@z1p/no",
+  "version": "0.0.4",
+  "description": "Geodata of Norway for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "no"
+    "longitude",
+    "latitude",
+    "iso",
+    "Norway",
+    "NO",
+    "NOR",
+    "578"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

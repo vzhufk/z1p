@@ -1,23 +1,24 @@
 {
-  "name": "z1p.lv",
-  "version": "0.0.3",
-  "description": "Zip data for LV.",
+  "name": "@z1p/lv",
+  "version": "0.0.4",
+  "description": "Geodata of Latvia for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "lv"
+    "longitude",
+    "latitude",
+    "iso",
+    "Latvia",
+    "LV",
+    "LVA",
+    "428"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

@@ -1,23 +1,24 @@
 {
-  "name": "z1p.lk",
-  "version": "0.0.3",
-  "description": "Zip data for LK.",
+  "name": "@z1p/lk",
+  "version": "0.0.4",
+  "description": "Geodata of Sri Lanka for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "lk"
+    "longitude",
+    "latitude",
+    "iso",
+    "Sri Lanka",
+    "LK",
+    "LKA",
+    "144"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

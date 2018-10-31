@@ -1,23 +1,24 @@
 {
-  "name": "z1p.bd",
-  "version": "0.0.3",
-  "description": "Zip data for BD.",
+  "name": "@z1p/bd",
+  "version": "0.0.4",
+  "description": "Geodata of Bangladesh for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "bd"
+    "longitude",
+    "latitude",
+    "iso",
+    "Bangladesh",
+    "BD",
+    "BGD",
+    "050"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

@@ -1,23 +1,24 @@
 {
-  "name": "z1p.mh",
-  "version": "0.0.3",
-  "description": "Zip data for MH.",
+  "name": "@z1p/mh",
+  "version": "0.0.4",
+  "description": "Geodata of Marshall Islands (the) for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "mh"
+    "longitude",
+    "latitude",
+    "iso",
+    "Marshall Islands (the)",
+    "MH",
+    "MHL",
+    "584"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

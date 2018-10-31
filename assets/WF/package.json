@@ -1,23 +1,24 @@
 {
-  "name": "z1p.wf",
-  "version": "0.0.3",
-  "description": "Zip data for WF.",
+  "name": "@z1p/wf",
+  "version": "0.0.4",
+  "description": "Geodata of Wallis and Futuna for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "wf"
+    "longitude",
+    "latitude",
+    "iso",
+    "Wallis and Futuna",
+    "WF",
+    "WLF",
+    "876"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

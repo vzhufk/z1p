@@ -1,23 +1,24 @@
 {
-  "name": "z1p.ca",
-  "version": "0.0.3",
-  "description": "Zip data for CA.",
+  "name": "@z1p/ca",
+  "version": "0.0.4",
+  "description": "Geodata of Canada for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "ca"
+    "longitude",
+    "latitude",
+    "iso",
+    "Canada",
+    "CA",
+    "CAN",
+    "124"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

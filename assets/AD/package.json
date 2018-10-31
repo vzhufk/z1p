@@ -1,23 +1,24 @@
 {
-  "name": "z1p.ad",
-  "version": "0.0.3",
-  "description": "Zip data for AD.",
+  "name": "@z1p/ad",
+  "version": "0.0.4",
+  "description": "Geodata of Andorra for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "ad"
+    "longitude",
+    "latitude",
+    "iso",
+    "Andorra",
+    "AD",
+    "AND",
+    "020"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

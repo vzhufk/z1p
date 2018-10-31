@@ -1,23 +1,24 @@
 {
-  "name": "z1p.im",
-  "version": "0.0.3",
-  "description": "Zip data for IM.",
+  "name": "@z1p/im",
+  "version": "0.0.4",
+  "description": "Geodata of Isle of Man for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "im"
+    "longitude",
+    "latitude",
+    "iso",
+    "Isle of Man",
+    "IM",
+    "IMN",
+    "833"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

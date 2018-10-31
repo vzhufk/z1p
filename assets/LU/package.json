@@ -1,23 +1,24 @@
 {
-  "name": "z1p.lu",
-  "version": "0.0.3",
-  "description": "Zip data for LU.",
+  "name": "@z1p/lu",
+  "version": "0.0.4",
+  "description": "Geodata of Luxembourg for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "lu"
+    "longitude",
+    "latitude",
+    "iso",
+    "Luxembourg",
+    "LU",
+    "LUX",
+    "442"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",

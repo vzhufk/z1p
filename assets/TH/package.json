@@ -1,23 +1,24 @@
 {
-  "name": "z1p.th",
-  "version": "0.0.3",
-  "description": "Zip data for TH.",
+  "name": "@z1p/th",
+  "version": "0.0.4",
+  "description": "Geodata of Thailand for z1p module.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
   "license": "MIT",
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "geolocation",
-    "region",
-    "state",
-    "th"
+    "longitude",
+    "latitude",
+    "iso",
+    "Thailand",
+    "TH",
+    "THA",
+    "764"
   ],
-  "engines": {
-    "node": ">=8"
-  },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
     "type": "git",
