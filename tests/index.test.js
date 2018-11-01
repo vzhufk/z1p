@@ -1,7 +1,7 @@
 const z1p = require("../index");
 
 describe("z1p test", () => {
-  describe("module", () => {
+  describe("functions", () => {
     describe("raw", () => {
       test("get one from one country", () => {
         const result = z1p(["ua"]).raw(v => v.zip_code == "59330");
@@ -89,36 +89,62 @@ describe("z1p test", () => {
     });
   });
 
-  describe("mock", () => {
-    describe("raw", () => {
-      test("get one from one country", () => {
-        const result = z1p([
-          [
-            {
-              zip_code: "59330"
-            }
-          ]
-        ]).raw(v => v.zip_code == "59330");
-        expect(result).toHaveLength(1);
-      });
-      test("get one from two", () => {
-        const result = z1p([
-          [
-            {
-              zip_code: "59330"
-            }
-          ],
-          [
-            {
-              zip_code: "59330"
-            },
-            {
-              zip_code: "59333"
-            }
-          ]
-        ]).raw(v => v.zip_code == "59330");
-        expect(result).toHaveLength(2);
-      });
+  describe("data", () => {
+    test("module", () => {
+      const result = z1p(["ua", "us"]).raw(v => v.zip_code == "59330");
+      expect(result).toHaveLength(2);
+    });
+
+    test("array of objects", () => {
+      const result = z1p([
+        [
+          {
+            zip_code: "59330"
+          }
+        ],
+        [
+          {
+            zip_code: "59330"
+          },
+          {
+            zip_code: "59333"
+          }
+        ]
+      ]).raw(v => v.zip_code == "59330");
+      expect(result).toHaveLength(2);
+    });
+
+    test("array of arrays", () => {
+      const result = z1p([
+        [[, , , , , , , , , , , "59330"]],
+        [[, , , , , , , , , , , "59330"], [, , , , , , , , , , , "59331"]]
+      ]).raw(v => v.zip_code == "59330");
+      expect(result).toHaveLength(2);
+    });
+
+    test("mixed", () => {
+      const result = z1p([
+        [[, , , , , , , , , , , "59330"]],
+        [
+          {
+            zip_code: "59330"
+          },
+          {
+            zip_code: "59333"
+          }
+        ],
+        "ua",
+        "us"
+      ]).raw(v => v.zip_code == "59330");
+      expect(result).toHaveLength(4);
+    });
+  });
+
+  describe("throws", () => {
+    test("no module", () => {
+      expect(() => {
+        z1p(["AD"]).findBy("zip_code", "59330");
+      }).toThrow();
     });
   });
 });

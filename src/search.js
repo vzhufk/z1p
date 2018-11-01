@@ -5,7 +5,7 @@ module.exports = (data, comp) => {
     try {
       data = require(`@z1p/${data.toLowerCase()}`);
     } catch (e) {
-      console.error(
+      throw new Error(
         `\n@z1p/${data.toLowerCase()} not installed!\nPlease run "npm install @z1p/${data.toLowerCase()}"`
       );
       data = [];
