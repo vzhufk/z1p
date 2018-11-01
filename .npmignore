@@ -1,2 +1,6 @@
+.editorconfig
+.travis.yml
+
 assets/
 scripts/
+tests/

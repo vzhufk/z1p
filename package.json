@@ -1,6 +1,6 @@
 {
   "name": "z1p",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Zip Codes Validation and Parse.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
@@ -13,7 +13,9 @@
     "geosearch",
     "longitude",
     "latitude",
-    "iso"
+    "iso",
+    "search",
+    "parse"
   ],
   "scripts": {
     "test": "jest"

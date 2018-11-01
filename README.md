@@ -2,19 +2,37 @@
 
 [![Build Status](https://travis-ci.com/vzhufk/z1p.svg?branch=master)](https://travis-ci.com/vzhufk/z1p)
 
-Module that can be used for search places via zip code and other geolocation properties.
-
-:clock10: _Note:_ Provide exact country codes to prevent slow performance and out of memory error.
-
-:package: _Note:_ Package is **~140Mb.**
+The module that can be used for search places via zip code and other geolocation properties.
 
 ## Usage
+
+Install package:
+
+```shell
+npm i z1p
+```
+
+Then you need to add countries you wish to search in. For example the USA.
+
+```shell
+npm i @zip/us
+```
+
+Then you can use it like this:
 
 ```js
 const z1p = require("z1p");
 
 // Get places by zip code.
 z1p(["US"]).raw(v => v.zip_code == "59330");
+
+// Same as above
+z1p(["us"]).findBy("zip_code", "59330"));
+
+// Same as above but memorized
+z1p(["Us"], {memorize: true}).findBy("zip_code", "59330"));
+
+//Result
 /*
 [ { accuracy: '1',
     community: null,
@@ -29,19 +47,13 @@ z1p(["US"]).raw(v => v.zip_code == "59330");
     state_code: 'MT',
     zip_code: '59330' } ]
 */
-
-// Same as above
-z1p(["US"]).findBy("zip_code", "59330"));
-
-// Same as above but memorized
-z1p(["US"], {memorize: true}).findBy("zip_code", "59330"));
 ```
 
 ## API
 
 ### z1p(codes, options)
 
-- `codes` `{Array of Strings}` Country codes to search in. By default equals to all available.
+- `codes` `{Array of Strings}` Country codes to search in. By default equals all available.
 - `options` `{Object}`
   - `memorize` `{Boolean}` `default: false` this options for memorization at methods
 
@@ -57,7 +69,7 @@ z1p(["US"], {memorize: true}).findBy("zip_code", "59330"));
 
   **returns**: {Array of Places}
 
-_Note:_ This method is memorized. Every result will saved to memory so only first call will be slow.
+_Note:_ This method could be memorized. Every result will be saved to memory so the only first call will be slow.
 
 Place object looks like this:
 
@@ -97,12 +109,11 @@ Place object looks like this:
 
 ## Countries
 
-### [Available countries](https://github.com/vzhufk/z1p/tree/master/assets) in `*.js` files.
+### [Available countries](https://github.com/vzhufk/z1p/tree/master/assets).
 
 ## TODO:
 
-1. Add memorization.
-2. Add wrappers to raw.
-3. Improve performance.
+1. Add wrappers to raw.
+2. Improve performance.
 
 ### GeoData provided by **[geonames.org](http://www.geonames.org/)**
