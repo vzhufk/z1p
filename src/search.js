@@ -1,10 +1,18 @@
 const map = require("./map");
 
 module.exports = (data, comp) => {
-  let isCompresed = false;
+  let isCompressed = false;
+
   if (typeof data === "string") {
-    data = require(`@z1p/${data.toLowerCase()}`);
-    isCompresed = true;
+    try {
+      data = require(`@z1p/${data.toLowerCase()}`);
+    } catch (e) {
+      console.error(
+        `\n@z1p/${data.toLowerCase()} not installed!\nPlease run "npm install @z1p/${data.toLowerCase()}"`
+      );
+    }
+
+    isCompressed = true;
   }
 
   if (!Array.isArray(data)) {
@@ -12,7 +20,7 @@ module.exports = (data, comp) => {
   }
 
   return data.reduce((a, v) => {
-    if (isCompresed) {
+    if (isCompressed) {
       v = map(v);
     }
 
