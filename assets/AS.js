@@ -1,1 +1,0 @@
-module.exports=[["6",null,null,"AS","-14.2781","-170.7025","Pago Pago","Western","050","As","60","96799"]]

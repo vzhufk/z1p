@@ -1,1 +1,0 @@
-module.exports=[["5",null,null,"WF","-14.3066","-178.1188","Alo",null,null,"Circonscription d'Alo","98611","98610"],["5",null,null,"WF","-14.2667","-178.1667","Sigave",null,null,"Circonscription de Sigave","98612","98620"],["5",null,null,"WF","-13.2988","-176.2205","Uvéa",null,null,"Circonscription d'Uvéa","98613","98600"]]

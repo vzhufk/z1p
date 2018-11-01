@@ -1,1 +1,0 @@
-module.exports=[["4",null,null,"VA","41.9024","12.4533","Citta' Del Vaticano",null,null,null,null,"00120"]]

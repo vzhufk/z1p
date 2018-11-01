@@ -1,6 +1,6 @@
 {
   "name": "z1p",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Zip Codes Validation and Parse.",
   "main": "index.js",
   "author": "V.Zhufiak A.Malyuk S.Vanzuriak",
@@ -8,17 +8,17 @@
   "keywords": [
     "zip",
     "zipcode",
-    "county",
+    "geo",
+    "geodata",
     "geosearch",
-    "region",
-    "state",
-    "validation"
+    "longitude",
+    "latitude",
+    "iso",
+    "search",
+    "parse"
   ],
   "scripts": {
     "test": "jest"
-  },
-  "engines": {
-    "node": ">=8"
   },
   "homepage": "https://github.com/vzhufk/z1p",
   "repository": {
@@ -48,6 +48,10 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "jest": "^23.6.0"
+    "@z1p/ua": "0.0.4",
+    "@z1p/us": "0.0.4",
+    "iso-country-codes": "0.0.5",
+    "jest": "^23.6.0",
+    "shelljs": "^0.8.2"
   }
 }

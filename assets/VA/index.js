@@ -1,0 +1,1 @@
+module.exports=[["4",,,"VA","41.9024","12.4533","Citta' Del Vaticano",,,,,"00120"]]
